@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even Registration</title>
+</head>
+<body>
+    <h2>Event Registration</h2>
+    <br/>
+
+    <form>
+        <label for="Name_Field">Name: </label> <br> 
+        <input type="text" id="Name_Field" placeholder="Enter your name">
+        <br/>
+        <br/>
+        
+        <label for="Email_Field">Email: </label> <br> 
+        <input type="email" id="Email_Field" placeholder="Enter your email">
+        <br/>
+        <br/>
+
+        <label for="Phone_Field">Phone: </label> <br> 
+        <input type="tel" name="Phone_Field" id="Phone_Field" placeholder="Enter your mobile number">
+        <br/>
+        <br/>
+        <label for="Occupation_Field">Occupation: </label> <br>
+        <select name="Occupation_Field" id="Occupation_Field">
+            <option>Others</option>
+            <option>Web Developer</option>
+            <option>DBA</option>
+            <option>Software Developer</option>
+        </select>
+        <br/>
+        
+        <fieldset>
+            <legend>Topic of Intrest: </legend>
+            
+            <input type="checkbox" id="HTML_Filed" name="Check1"> <br>
+            <label for="HTML_Filed">HTML: </label>
+            <br/>
+            <br/>
+            
+            <input type="checkbox" id="CSS_Filed" name="Check1"> <br>
+            <label for="CSS_Filed">CSS: </label>
+            <br/>
+            <br/>
+            
+            <input type="checkbox" id="Java_Script_Filed" name="Check1"> <br>
+            <label for="Java_Script_Filed">Java Script: </label>
+            <br/>
+            <br/>
+            
+            <label for="Comment_Text_Area">Comments: </label><br>
+            <textarea id="Comment_Text_Area" rows="5" cols="70"></textarea>
+            <input type="submit" value="Register">
+        </fieldset>
+    </form>
+
+</body>
+</html>

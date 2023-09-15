@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form2</title>
+</head>
+
+<body>
+    <h2>Job Application</h2>
+    <form>
+        <label for="Name_Field">Name: </label> <br>
+        <input type="text" id="Name_Field" placeholder="Enter your name">
+        <br>
+        <br>
+
+        <label for="Email_Field">Email: </label> <br>
+        <input type="email" id="Email_Field" placeholder="Enter your Email">
+        <br>
+        <br>
+
+        <label for="Mobile_Field">Phone: </label> <br>
+        <input type="tel" id="Mobile_Field" placeholder="Enter your Moblie number">
+        <br>
+        <br>
+
+        <label for="Resume_Field">Resume: </label> <br>
+        <input type="file" id="Resume_Field">
+        <br>
+        <br>
+
+        <label for="Experience_Field">Experience: (Years)</label> <br>
+        <input type="number" id="Experience_Field" min="0" max="50">
+        <br>
+        <br>
+
+        <fieldset>
+            <legend>Skills</legend>
+
+            <label for="HTML_Check_Field">HTML</label>
+            <input type="checkbox" id="HTML_Check_Field">
+            <br>
+            <br>
+
+            <label for="CSS_Check_Field">CSS</label>
+            <input type="checkbox" id="CSS_Check_Field">
+            <br>
+            <br>
+
+            <label for="JAVA_Check_Field">JAVA</label>
+            <input type="checkbox" id="JAVA_Check_Field">
+            <br>
+            <br>
+        </fieldset>
+
+        <br>
+        <label for="Education_Field">High Education: </label>
+        <select id="Education_Field">
+            <option>No</option>
+            <option>High School</option>
+            <option>Under Graduate</option>
+            <option>Post Graduate</option>
+        </select>
+        <br>
+        <br>
+
+        <label for="Availability_Field">Availability: </label>
+        <br>
+
+        <label for="Full_Field">Full Time: </label>
+        <input type="radio" id="Full_Field" name="Availability_Radio"><br>
+
+        <label for="Part_Field">Part Time: </label>
+        <input type="radio" id="Part_Field" name="Availability_Radio"><br>
+
+        <label for="Remote_Field">Remote Time: </label>
+        <input type="radio" id="Remote_Field" name="Availability_Radio">
+        <br>
+        <br>
+
+        <label for="Comment_Text_Area">Additional Comment: </label> <br>
+        <textarea rows="3" cols="80" id="Comment_Text_Area"></textarea>
+        <input type="submit" value="Submit Application">
+    </form>
+</body>
+
+</html>

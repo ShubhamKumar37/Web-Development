@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Selector</title>
+    <style>
+        #Outside_Div
+        {
+            border: 5px solid rgb(4, 196, 255);
+        }
+        #Outside_Div .Inner_Class
+        {
+            background-color: rgb(64, 211, 19);
+        }
+        #Outside_Div .Inner_Class p
+        {
+            color: white;
+        }
+        p
+        {
+            color: aqua;
+            /* This will not work for nested paragraph it will only work for paragraph without any id or class. */
+        }
+    </style>
+</head>
+<body>
+    <div id="Outside_Div">
+        <div class="Inner_Class">
+            <p id="Para_Id">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, quasi!</p>
+        </div>
+    </div>
+
+    <p>This is paragraph with some sequence data</p>
+</body>
+</html>

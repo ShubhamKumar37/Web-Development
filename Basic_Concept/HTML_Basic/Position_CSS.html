@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        #Margin_Box
+        {
+            margin: 90px;
+        }
+        .box
+        {
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            border: 2px solid black;
+            display: inline-block;
+        }
+        #box2
+        {
+            position: relative;
+            /* relative will change the position form the current original position  */
+            /* top: 60px; */
+            /* bottom: 10px; */
+            right: 20px;
+        }
+        #box3
+        {
+            position: fixed;
+            /* fixed position will always fixed even if it have to overlap  */
+            background-color: yellow;
+            left: 40px;
+            top: 10px;
+        }
+        #box4
+        {
+            position: absolute;
+            /* if a parent entity exits then it will move position with respect to it but if not present then it will use position according to body tag */
+            left: 40px;
+        }
+        #box5
+        {
+            position: sticky;
+            /* sticky will work like fixed if it is in frame of its specified content or then it will work like relative with other */
+            top: 20px;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="Margin_Box">
+        <div class="box" id="box1">A</div>
+        <div class="box" id="box2">B</div>
+        <div class="box" id="box3">C</div>
+        <div class="box" id="box4">D</div>
+        <div class="box" id="box5">D</div>
+        <!-- <div class="box" id="box6">D</div>
+        <div class="box" id="box7">D</div> -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nulla eveniet quisquam autem voluptate exercitationem dolor natus consectetur! Totam rem quaerat nobis natus officiis molestiae. Ea inventore fuga commodi omnis sed quas obcaecati consequuntur delectus nostrum dolorum doloremque, vero repellendus, eaque ullam atque in rem animi reprehenderit reiciendis illum eius! A quos corrupti voluptatum deserunt eius impedit placeat explicabo enim laborum, voluptatibus ratione tenetur, cupiditate ipsa molestias! Nulla quo delectus architecto similique corporis accusantium laboriosam eaque, dolore hic id voluptatibus quis ullam provident culpa, fuga labore esse perferendis officia laborum odio nesciunt voluptatum at nihil. Nulla quis, earum libero sapiente exercitationem voluptas non repudiandae consequuntur doloribus dicta recusandae esse molestias, molestiae illo cum architecto dolorum quod quisquam mollitia laboriosam ab, at natus? Labore cum exercitationem nam praesentium illo aliquam ut, consequuntur, nesciunt enim saepe accusantium? Sapiente mollitia fugit temporibus corrupti animi non placeat, dolorum quae eius ea accusantium iusto ab quibusdam ullam excepturi dicta quasi, doloribus ducimus sit eaque iste quis. Modi nostrum id expedita non est nisi ab, quasi nesciunt, officia, eos vel odio sequi mollitia! Repellendus consequatur asperiores eum tempore harum, porro non eaque neque soluta deserunt dolor, quam totam ullam iste. Architecto repellat adipisci aperiam sunt quas doloribus ipsam ullam reprehenderit itaque nostrum veritatis laudantium officiis omnis aliquam suscipit nam deleniti dicta, voluptatum consectetur ratione. In eaque aperiam tempora sed voluptatem cumque quia debitis hic alias, earum excepturi molestias commodi praesentium dolore eum provident enim ducimus sequi odit, culpa obcaecati, consequuntur ullam consectetur? Quisquam facere impedit, temporibus voluptatem, architecto eum alias perspiciatis voluptas explicabo dolor saepe rerum assumenda, iste placeat. Est quo obcaecati qui sint! Quis accusamus corrupti tenetur laboriosam odio officiis architecto animi voluptatem delectus soluta omnis autem, enim cupiditate cumque a excepturi! Laboriosam soluta accusamus voluptate animi expedita at, placeat autem maiores nemo. Deserunt iusto suscipit doloremque, architecto voluptate autem! Omnis modi, totam, debitis voluptatum commodi ab eligendi eum, ipsum illo adipisci hic magnam. Distinctio, vero. Earum totam sequi quos fugiat assumenda. Vero nobis est architecto dignissimos ut velit eius officia alias, odio temporibus magni consectetur ducimus itaque vel provident, porro unde minus quos doloremque. Eaque quidem quo odit officia, ducimus modi eius! Pariatur aliquid obcaecati excepturi cupiditate ipsam nisi incidunt quod, a eius tempora in, vel officia consectetur officiis ullam inventore vero omnis blanditiis quis, quaerat quibusdam cumque! Animi vitae harum recusandae quod tempore quaerat quasi vel officia provident neque iure quis sapiente molestiae architecto facilis sit, temporibus ducimus sint ratione explicabo quos ex saepe voluptate suscipit? Sapiente ab maxime ex dolore voluptate molestias eum doloremque odio praesentium, minus sed, placeat corrupti natus labore perspiciatis aliquam. Velit rerum, officia inventore tenetur corrupti aut ipsum repellendus voluptatum ad atque cum eius consequatur deserunt, doloremque earum sapiente animi? Error rerum culpa asperiores impedit, doloremque aperiam provident, facilis vel vero earum unde id aut expedita, officiis aspernatur quaerat tempore sit labore ab necessitatibus quibusdam nam eveniet ad suscipit. Laboriosam id magni, minima aliquid architecto mollitia quas soluta repellendus porro facere maiores esse, beatae nulla, accusamus reiciendis sequi!</p>
+
+    </div>
+</body>
+</html>

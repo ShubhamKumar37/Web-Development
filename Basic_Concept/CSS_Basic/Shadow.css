@@ -1,0 +1,12 @@
+h1
+{
+    height: 200px;
+    width: 300px;
+    background-color: aqua;
+    text-shadow: 4px 4px 4px orangered, 6px 2px green;
+    text-shadow: 4px -4px 4px orangered, 6px 2px green;
+    box-shadow: 0 0 7px 4px;
+    /* Horizontal Vertical Blur_Radius Blur Colour */
+    /* deafult color of text in box shadow is the color of text  */
+    border: 4px solid green;
+}

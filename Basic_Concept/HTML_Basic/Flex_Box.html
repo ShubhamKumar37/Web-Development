@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        .container
+        {
+            border: 2px solid black;
+            height: 300px;
+            display: flex;
+            flex-direction: row;
+            /* row will convert the div into the row direction and reverse will change it up to its opposite direction mean form rightside  */
+
+            /* flex-direction: column; */
+            /* coloum will change the direction of div like its original */
+            
+            /* flex-wrap: wrap; */
+            /* wrap will help to make the dimension of the container as same a original if we squeze the screen but after limit squeze it will squeze in next line for wrap-reverse the element will move the above line. Default value of flex-wrap is nowrap  */
+
+            /* flex-flow: column wrap; */
+
+            justify-content: space-around;
+
+            align-items: center;
+            align-items: baseline;
+            /* baseline will help to allign all the content base in a level if we have different element then the content will be align in a straight baseline */
+            
+            /* align-items: flex-end;
+            align-items: flex-start; */
+            /* flex end/start will move content in down side or at the end/start of cross axis which is vertical axis. */
+            /* align-items: stretch; */
+            /* by default value in flex box is stretch  */
+
+            justify-content: center;
+            align-items: center;
+            /* row-gap: 10px; */
+            /* gap in row of our div */
+            column-gap: 10px;
+        }
+
+        .box
+        {
+            background-color: aqua;
+            border: 1px solid blue;
+            width: 60px;
+            height: 30px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+        <div class="box">Box4</div>
+    </div>
+</body>
+</html>

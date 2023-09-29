@@ -1,0 +1,40 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+#Wrapper
+{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 100px;
+}
+
+.Container
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;   
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.Background, .Foreground
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.Foreground
+{
+    /* justify-content: center; */
+    /* align-items: flex-start; */
+    /* align-content: flex-start;
+    scale: 0.3; */
+}
+

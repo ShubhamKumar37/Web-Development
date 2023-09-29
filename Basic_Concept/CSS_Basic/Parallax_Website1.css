@@ -1,3 +1,54 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#Wrapper
+{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+}
+
+.Container
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    transform-style: preserve-3d;
+    height: 100%;
+}
+
+.Background, .Foreground
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+
+}
+
+.Background {
+    transform: translate3d(0px, 0px, -40px);
+    scale: 5.1;
+}
+
+.Foreground {
+    transform: translate3d(160px, 550px, -20px);
+    scale: 1;
+}
+
+#Heading
+{
+    color: wheat;
+    transform: translate3d(0px, -15px, -10px);
+    scale: 5;
+}
 /* *
 {
     margin: 0;

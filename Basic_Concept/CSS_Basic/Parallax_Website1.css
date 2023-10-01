@@ -10,18 +10,18 @@
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
-    perspective: 10px;
+    perspective: 20px;
 }
 
 .Container
 {
     position: relative;
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: -1;
     transform-style: preserve-3d;
-    height: 100%;
 }
 
 .Background, .Foreground
@@ -29,73 +29,31 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    object-fit: fill;
-
-}
-
-.Background {
-    transform: translate3d(0px, 0px, -40px);
-    scale: 5.1;
-}
-
-.Foreground {
-    transform: translate3d(160px, 550px, -20px);
-    scale: 1;
-}
-
-#Heading
-{
-    color: wheat;
-    transform: translate3d(0px, -15px, -10px);
-    scale: 5;
-}
-/* *
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
-
-/* #Wrapper {
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    perspective: 10px;
-} */
-
-/* .Container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    transform-style: preserve-3d;
-    z-index: -1;
-} */
-
-/* .Background,
-.Foreground {
-    position: absolute;
-    height: 100%;
-    width: 100%;
     object-fit: cover;
     z-index: -1;
 }
 
-.Background {
-    transform: translateZ(-40px);
+.Background
+{
+    transform: translate3d(0px, 0px, -48px);
     scale: 5;
-    
 }
 
-.Foreground {
-    transform: translate3d(0px, 320px, -20px);
-    scale: 1.5;
+.Foreground
+{
+    transform: translate3d(0px, 0px, -34px);
+    scale: 3;
 }
 
 #Heading
 {
-    transform: translate3d(0px, -50px, -5px);
-    scale: 2;
-
-} */
+    position: absolute;
+    transform: translate3d(0px, 0px, -10px);
+    scale: 1;
+    top: 145px;
+    font-size: 121px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 4px;
+    letter-spacing: 9px;
+    
+}

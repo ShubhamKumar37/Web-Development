@@ -41,7 +41,7 @@
 
 .Foreground
 {
-    transform: translate3d(0px, 0px, -34px);
+    transform: translate3d(0px, -10px, -34px);
     scale: 3;
 }
 
@@ -54,6 +54,26 @@
     font-size: 121px;
     color: rgb(255, 255, 255);
     text-shadow: 0 0 4px;
-    letter-spacing: 9px;
-    
+    letter-spacing: 9px;   
+}
+
+#Section1
+{
+    position: relative;
+    background-color: rgb(45, 45, 45);
+    color: white;
+    padding: 50px 0;
+}
+
+.Background_Img1
+{
+    background-image: url(../../Images/sport-1.jpg);
+}
+.Background_Img2
+{
+    background-image: url(../../Images/sport-2.jpg);
+}
+.Background_Img3
+{
+    background-image: url(../../Images/sport-3.jpg);
 }

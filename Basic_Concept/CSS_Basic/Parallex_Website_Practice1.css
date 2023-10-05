@@ -1,0 +1,124 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#Wrapper
+{
+    height: 100vh;
+    overflow-x: hidden;
+    perspective: 20px;
+
+}
+
+.Container
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    height: 100%;
+    z-index: -1;
+}
+
+.Background, .Foreground
+{
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.Background
+{
+    transform: translate3d(0px, 0px, -50px);
+    scale: 3.7;
+}
+.Foreground
+{
+    transform: translate3d(0px, 0px, 0px);
+    
+}
+
+#Heading
+{
+    position: absolute;
+    transform: translate3d(0px, 0px, -12px);
+    font-size: 180px;
+    letter-spacing: 10px;
+    color: white;
+    text-shadow: 0 0 40px;
+    top: 50px;
+}
+
+.Content
+{
+    position: relative;
+    background-color: rgb(51, 45, 45);
+}
+
+.Para
+{
+    color: white;
+    font-size: 25px;
+    padding: 40px;
+}
+
+#Para_Heading
+{
+    color: white;
+    font-size: 45px;
+    padding-left: 37px;
+}
+
+.BG1
+{
+    background-image: url(../../Images/sport-2.jpg);
+}
+.BG2
+{
+    background-image: url(../../Images/sport-1.jpg);
+}
+.BG3
+{
+    background-image: url(../../Images/sport-3.jpg);
+}
+.Bground
+{
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    filter: saturate(10%);
+
+}
+.Bground:hover
+{
+    filter: saturate(120%);
+    transition: 0.3s ease-in;
+}
+
+.Title
+{
+    display: inline-block;
+    color: white;
+    text-shadow: 0 0 10px;
+    letter-spacing: 2px;
+    font-size: 40px;
+}
+
+#Title1
+{
+    transform: translate(680px, 250px);
+}
+#Title2
+{
+    transform: translate(680px, 250px);
+}
+#Title3
+{
+    transform: translate(680px, 250px);
+}

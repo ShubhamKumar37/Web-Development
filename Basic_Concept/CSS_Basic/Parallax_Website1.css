@@ -105,12 +105,14 @@
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    opacity: 0.7;
+    filter: saturate(20%);
 }
 
 .Bg:hover
 {
-    opacity: 1;
+    filter: saturate(150%);
+    transition: 0.3s ease-in-out;
+    
 }
 
 .Title
@@ -120,6 +122,7 @@
     text-shadow: 0 0 20px;
     font-size: 40px;
     letter-spacing: 4px;
+    text-decoration: underline;
 }
 
 #Title1

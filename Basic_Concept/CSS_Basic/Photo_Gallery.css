@@ -56,18 +56,14 @@
     
 }
 
-.Figure :hover
-{
+.Figure:hover img {
     transition: 0.4s;
-    scale: 1.04;
-}
-.Figure:hover img
-{
+    transform: scale(1.04);
     filter: saturate(100%) brightness(110%);
+    opacity: 1;
 }
 
-/* .Figure figcaption */
-.Figure figcaption
+.Caption
 {
     position: absolute;
     left: 0px;  
@@ -78,15 +74,14 @@
     width: 99%;
     height: 20%;
     font-size: 20px;
-    border-radius: 20px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.479) 0%, rgba(255, 255, 255, 0) 100%);
-    transform: translate(0px, 4px);
+    border-radius: 10px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.219), rgba(255, 255, 255, 0));
+    transform: translate(0px, 3.5px);
 }
 
-.Figure:hover .Caption
-{
-    opacity: 1;
+.Figure:hover figcaption {
     transition: 0.4s;
     text-align: center;
+    opacity: 1;
     scale: 1.07;
 }

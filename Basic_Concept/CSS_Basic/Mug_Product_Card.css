@@ -1,0 +1,101 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&family=Roboto+Mono:wght@500&display=swap');
+body
+{
+    background-color: antiquewhite;  
+}
+
+#Wrapper
+{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.Container
+{
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    width: 40%;
+    height: 50%;
+    margin: 10% auto;
+}
+
+.Image img
+{
+    display: flex;
+    width: 240px;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+    object-fit: cover;
+    
+}
+.Info
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow:hidden;
+    margin: 20px 20px;
+}
+
+h2
+{
+    font-size: 100%;
+    width: 80%;
+    letter-spacing: 10px;
+    font-family: "Fuggles", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(109, 109, 109);  
+}
+h1
+{
+    font-family: "Fuggles", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 250px;
+}
+
+.Desc
+{
+    font-family: "Fuggles", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    margin: 5px 0;
+}
+
+#Price
+{
+    color: green;
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#Price s
+{
+    font-size: 15px;
+    color: rgb(109, 109, 109);
+}
+
+#Add_To_Cart
+{
+    display: flex;
+    background-color: rgba(55, 148, 68, 0.884);
+    color: white;
+    height: 30px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+#Add_To_Cart:hover
+{
+    background-color: green;
+    filter: saturate(100%);
+    transition: 0.2s ease-in-out;
+
+}

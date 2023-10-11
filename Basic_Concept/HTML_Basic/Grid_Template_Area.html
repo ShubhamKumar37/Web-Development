@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Template area</title>
+    <style>
+        .Container
+        {
+            height: 700px;
+            background-color: green;
+            border: 3px black solid;
+            display: grid;
+            grid-template-columns: 500px;
+            grid-template-rows: 40px 200px 160px 40px;
+            grid-template-areas: 
+            "Head"
+            /* "Head" */
+            "Nav"
+            "Nav"
+            "Body"
+            "Footer ";
+            /* we can give multiple of name in a single row even if no more coloumn are available at that time the dimension of the coloumn will be divide according to the arrengment but its not good practice as it may lead to abnormal behaviour */
+        }
+        
+        .Box
+        {
+            background-color: rgb(113, 78, 240);
+            border: 3px black solid;
+        }
+        #Box1
+        {
+            grid-area: Head;
+        }
+        #Box2
+        {
+            grid-area: Nav;
+        }
+        #Box3
+        {
+            grid-area: Body;
+        }
+        #Box4
+        {
+            grid-area: Footer;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="Container">
+        <div class="Box" id="Box1">Box1</div>
+        <div class="Box" id="Box2">Box2</div>
+        <div class="Box" id="Box3">Box3</div>
+        <div class="Box" id="Box4">Box4</div>
+    </div>
+</body>
+</html>

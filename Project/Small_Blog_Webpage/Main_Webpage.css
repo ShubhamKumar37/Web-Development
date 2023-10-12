@@ -1,0 +1,38 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#Wrapper
+{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.Header
+{
+    display: flex;
+    margin: 1rem;
+    justify-content: space-between;
+}
+
+#Topic
+{
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-decoration: underline;
+}
+
+#Sub
+{
+    font-size: 1rem;
+}
+
+#Search img
+{
+    scale: 1.24;
+}

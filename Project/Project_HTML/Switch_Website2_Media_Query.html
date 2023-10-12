@@ -41,6 +41,42 @@
         {
             grid-area: Ft;
         }
+        
+        @media(max-width:400px)
+        {
+            .Container
+            {
+                display: grid;
+                background-color: aqua;
+                border: 2px solid black;
+                height: 500px;
+                width: 700px;
+                grid-template-columns: 200px 1fr;
+                grid-template-rows: 30px 1fr 30px;
+                grid-template-areas: 
+                "Hd Hd"
+                "Sd Ct"
+                "Ft Ft";
+            }
+            @media((min-width: 0px) and (max-width: 300px))
+            {
+                .Container
+                {
+                    display: grid;
+                    background-color: aqua;
+                    border: 2px solid black;
+                    height: 500px;
+                    width: 700px;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 30px 150px 1fr 30px;
+                    grid-template-areas: 
+                    "Hd"
+                    "Sd"
+                    "Ct"
+                    "Ft";
+                }
+            }
+        }
     </style>
 </head>
 <body>

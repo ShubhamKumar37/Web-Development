@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website1</title>
+    <style>
+        .Container
+        {
+            display: grid;
+            background-color: aqua;
+            border: 2px solid black;
+            height: 500px;
+            width: 700px;
+            grid-template-columns: 1fr;
+            grid-template-rows: 30px 150px 1fr 30px;
+            grid-template-areas: 
+            "Hd"
+            "Sd"
+            "Ct"
+            "Ft";
+        }
+        .Box
+        {
+            background-color: aqua;
+            border: 2px solid black;
+        }
+        #Box1
+        {
+            grid-area: Hd;
+        }
+        #Box2
+        {
+            grid-area: Sd;
+        }
+        #Box3
+        {
+            grid-area: Ct;
+        }
+        #Box4
+        {
+            grid-area: Ft;
+        }
+    </style>
+</head>
+<body>
+    <div class="Container">
+        <div class="Box" id="Box1">
+            <a href="Switch_Website1.html">Click here for new layout</a>
+        </div>
+        <div class="Box" id="Box2">Sidebar</div>
+        <div class="Box" id="Box3">Content</div>
+        <div class="Box" id="Box4">Footer</div>
+    </div>
+</body>
+</html>

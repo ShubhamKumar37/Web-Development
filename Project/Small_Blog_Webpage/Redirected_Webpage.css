@@ -1,0 +1,93 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#Wrapper
+{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.Header
+{
+    display: flex;
+    margin: 1rem;
+    justify-content: space-between;
+}
+
+#Topic
+{
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    text-decoration: underline;
+}
+
+.Sub
+{
+    font-size: 1rem;
+}
+
+#Search img
+{
+    scale: 1.24;
+}
+
+.Content
+{
+    display: grid;
+    margin: 2rem 3rem;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 1fr;
+    grid-gap: 1.5rem;
+}
+
+#Small_Fade_Text
+{
+    font-size: 12px;
+    color: rgba(114, 114, 114, 0.603);
+}
+
+.Border_Content
+{
+    border: 3px solid rgba(114, 114, 114, 0.349);
+    margin: 1rem;
+    padding: 0.5rem;
+}
+
+.List
+{
+    margin: 1rem 3rem;
+}
+
+.Col2
+{
+    font-family: cursive;
+}
+.Set_Gap
+{
+    margin: 1rem 0 1rem 0;
+}
+
+#About_Sec
+{
+    background-color: rgba(62, 123, 255, 0.281);
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+@media(max-width:60rem)
+{
+    .Content
+    {
+        display: grid;
+        margin: 2rem 3rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 1.5rem;
+    }
+}

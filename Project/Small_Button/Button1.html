@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button2</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #Wrapper
+        {
+            height: 100vh;
+            overflow-x: hidden;
+            overflow-y: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .Container
+        {
+            font-size: 3rem;
+            background-color: aqua;
+            padding: 1rem 3rem;
+        }
+        
+        @keyframes Shubham1
+        {
+            25%
+            {
+                border-radius: 1rem 0 0 0;
+                background-color: rgb(2, 219, 219);
+            }
+            50%
+            {
+                border-radius: 1rem 1rem 0 0;
+                background-color: rgb(1, 187, 187);
+            }
+            75%
+            {
+                border-radius: 1rem 1rem 1rem 0;
+                background-color: rgb(2, 148, 148);
+            }
+            100%
+            {
+                border-radius: 1rem 1rem 1rem 1rem;
+                background-color: rgb(7, 109, 41);
+            }
+        }
+        @keyframes Shubham2
+        {
+            0%
+            {
+                border-radius: 1rem 1rem 1rem 1rem;
+                background-color: rgb(7, 109, 41);
+            }
+            25%
+            {
+                border-radius: 1rem 1rem 1rem 0;
+                background-color: rgb(2, 148, 148);
+            }
+            50%
+            {
+                border-radius: 1rem 1rem 0 0;
+                background-color: rgb(1, 187, 187);
+            }
+            75%
+            {
+                border-radius: 1rem 0 0 0;
+                background-color: rgb(2, 219, 219);
+            }
+            100%
+            {
+                border-radius: 0 0 0 0;
+                background-color: aqua;    
+            }
+        }
+
+        .Container:hover
+        {
+            cursor: pointer;
+            animation: Shubham1 1s ease forwards alternate;
+            /* animation: Shubham2 1s ease forwards; */
+        }
+    </style>
+</head>
+<body>
+    <div id="Wrapper">
+        <div class="Container">Hover me</div>
+    </div>
+</body>
+</html>

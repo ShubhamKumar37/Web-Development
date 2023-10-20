@@ -81,14 +81,14 @@
 
 .Faded_Text
 {
+    position: absolute;
     user-select: none;
     font-size: 7em;
-    color: rgb(116, 116, 116);
+    color: rgba(116, 116, 116, 0.507);
 
-    bottom: 16%;
-    left: -5%;
+    bottom: -16%;
+    left: 2%;
     font-weight: bold;
-    transition: all 10s;
 }
 
 .Hero_Left
@@ -137,7 +137,7 @@
 {
     position: absolute;
     content: "";
-    background-color: black;
+    background-color: rgb(23, 77, 194);
     top: 0;
     bottom: 0;
     left: 0;
@@ -146,7 +146,7 @@
     transform-origin: left;
     object-fit: fill;
     z-index: -1;
-    transition: 0.8s ease;
+    transition: 0.5s ease;
 }
 
 .HM_Button:hover::before
@@ -212,6 +212,22 @@
     animation: Up_Down_Right_Left 1.5s alternate infinite;
 }
 
+.Plus_Img
+{
+    margin-top: -2rem;
+    top: 0;
+    left: 50%;
+    animation: Up_Down_Right_Left 1.5s alternate infinite;
+}
+
+.Dot_Img
+{
+    bottom: 0;
+    right: 0;
+    margin-right: -2rem;
+    animation: Up_Down 2s alternate infinite ;
+}
+
 @keyframes Up_Down_Right_Left {
     from
     {
@@ -220,5 +236,34 @@
     to
     {
         transform: translate(-1rem, 1rem);
+    }
+}
+
+@keyframes Up_Down {
+    from
+    {
+        transform: translateY(0rem);
+    }
+    to
+    {
+        transform: translateY(3rem);
+    }
+}
+
+.Cube_Img
+{
+    right: 0;
+    animation: Rotate_Up_Down 2s alternate infinite;
+}
+
+@keyframes Rotate_Up_Down
+{
+    from
+    {
+        transform: translate(0rem, 0rem) rotateY(0deg);
+    }
+    to
+    {
+        transform: translate(0rem, 3rem) rotateY(360deg);
     }
 }

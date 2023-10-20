@@ -109,7 +109,7 @@
 
 .Role
 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: rgb(128, 101, 248);
     font-weight: bold;
 }
@@ -152,4 +152,73 @@
 .HM_Button:hover::before
 {
     transform: scale(1);
+}
+
+.Hero_Right
+{
+    position: relative;
+
+}
+
+.Absolute
+{
+    position: absolute;
+    z-index: 1;
+}
+
+.User_Img
+{
+    padding: 1.5rem;
+    filter: saturate(0%);
+    animation: Shubham 4s alternate ease infinite;
+    z-index: -1;
+}
+
+.User_Img img
+{
+    width: 18rem;
+}
+
+@keyframes Shubham {
+    0%
+    {
+        filter: saturate(0%);
+        scale: 1;
+        box-shadow: 0px 0px 5px black;
+    }
+    50%
+    {
+        filter: saturate(100%);
+        box-shadow: 0 0 black;
+        scale: 1.1;
+    }
+    100%
+    {
+        filter: saturate(0%);
+        box-shadow: 0px 0px 5px black;
+        scale: 1;
+    }
+}
+
+.Circle_Img
+{
+    bottom: 0;
+    left: 0;
+    animation: Up_Down_Right_Left 1.5s alternate infinite;
+}
+
+.Zig_Zag_Img
+{
+    animation: Up_Down_Right_Left 1.5s alternate infinite;
+}
+
+@keyframes Up_Down_Right_Left {
+    from
+    {
+        transform: translate(0, 0);
+    }
+    to
+    {
+        transform: translate(-1rem, 1rem);
+    }
 }

@@ -42,7 +42,7 @@
     cursor: pointer;
     color: rgb(85, 85, 85);
 }
-.Book_Marks:hover p
+.Book_Marks div:hover
 {
     text-decoration: underline;
 }

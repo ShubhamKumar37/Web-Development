@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif  ;
+    font-family:Arial, Helvetica, sans-serif  ;
     
 }
 
@@ -68,73 +68,88 @@
 
 .Hero
 {
-    display: flex;
     position: relative;
+    display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 3rem;
-    background-color: rgb(255, 255, 255);
-    padding: 0 2rem 2rem 8rem;
-    gap: 20rem;
+
+    gap: 5rem;
+    margin: 4rem auto;
+    padding: 0 1rem;
+    padding-bottom: 8rem;
+}
+
+.Faded_Text
+{
+    user-select: none;
+    font-size: 7em;
+    color: rgb(116, 116, 116);
+
+    bottom: 16%;
+    left: -5%;
+    font-weight: bold;
+    transition: all 10s;
 }
 
 .Hero_Left
 {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 2rem;
 }
 
-.Faded_Text
+.Hero_Left_Heading
 {
-    font-size: 5rem;
-    color: rgb(192, 192, 192);
-    user-select: none;
-    bottom: 0;
+    font-size: 2rem;
 }
-
-.Hero_Left
+.Hero_Left_Subheading
 {
-    width: 45%;
+    font-size: 2.5rem;
 }
 
-.Hero_Right
+.Role
+{
+    font-size: 3rem;
+    color: rgb(128, 101, 248);
+    font-weight: bold;
+}
+
+.Hero_Left_Desc
+{
+    width: 80%;
+    font-size: 1.3rem;
+}
+
+.HM_Button
 {
     position: relative;
+    background-color: rgb(253, 93, 93);
+    width: fit-content;
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    box-shadow: 5px 5px 9px black;
+    cursor: pointer;
+    z-index: 1;
+    color: white;
 }
 
-.Absolute
+.HM_Button::before
 {
     position: absolute;
-}
-.Icon
-{
-    
-    z-index: 1;
+    content: "";
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    object-fit: fill;
+    z-index: -1;
+    transition: 0.8s ease;
 }
 
-.User_Img
+.HM_Button:hover::before
 {
-    padding: 1.5rem;
-    animation: John 2s normal linear infinite;
-    z-index: -8;
-}
-
-@keyframes John {
-    0%
-    {
-        filter: saturate(0%);
-        transform: scale(1);
-    }
-    50%
-    {
-        filter: saturate(120%);
-        transform: scale(1.2);
-        box-shadow: 3px 3px 10px black;
-    }
-    100%
-    {
-        filter: saturate(0%);
-        transform: scale(1);
-    }
+    transform: scale(1);
 }

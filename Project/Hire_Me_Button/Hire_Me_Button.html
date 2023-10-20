@@ -23,6 +23,7 @@
             color: white;
             box-shadow: 4px 3px 10px 0px black;
             z-index: 1;
+            transition: all 0.5s;
         }
         .Btn::before
         {
@@ -37,11 +38,11 @@
             transform: scaleX(0);
             z-index: -1;
             cursor:pointer;
+            transition: all 0.5s;
         }
         
         .Btn:hover::before  
         {
-            transition: 0.5s ease;
             transform: scaleX(1);
             text-shadow: 3px 3px 4px;
         }

@@ -86,7 +86,7 @@
     font-size: 7em;
     color: rgba(116, 116, 116, 0.507);
 
-    bottom: -16%;
+    bottom: -17.8%;
     left: 2%;
     font-weight: bold;
 }
@@ -266,4 +266,42 @@
     {
         transform: translate(0rem, 3rem) rotateY(360deg);
     }
+}
+
+.Project_Section
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #B9B9B9;
+}
+
+.Project_Heading
+{
+    color: red;
+    font-size: 6rem;
+    font-weight: 300;
+    letter-spacing: 0.3rem;
+    margin: 1rem;
+}
+
+.Project_Card
+{
+    width: 50%;
+}
+
+.Project_Content
+{
+    width: 50%;
+}
+
+.Project_Skill_Container
+{
+    width: 100%;
+}
+
+.Project_Skill_Icon
+{
+    width: 15%;
 }

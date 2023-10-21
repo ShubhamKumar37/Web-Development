@@ -270,73 +270,73 @@
 
 .Project_Section
 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: #B9B9B9;
 }
 
 .Project_Heading
 {
-    color: red;
-    font-size: 6rem;
-    font-weight: 300;
-    letter-spacing: 0.3rem;
-    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 400;
+    color: tomato;
+}
+
+.Project_Container
+{
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 2rem 0;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .Project_Card
 {
+    width: 90%;
+    height: 560px;
     position: relative;
-    display: flex;
-    width: 60%;
-    height: 30rem;
-    margin: 3rem;
-    align-items: center;
+    background-size: cover;
+    box-shadow: 0 0 40px black;
+}
+
+.Project_Card::after
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.604);
+    z-index: 0;
+}
+
+.Project_Card::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+
+    background: linear-gradient(45deg, rgba(61, 79, 140, 0.952), rgba(52, 68, 120, 0.242), rgba(41, 54, 93, 0.105));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 0.5s ;
+}
+
+.Project_Card:hover::before
+{
+    transform: scaleX(1);
 }
 
 #Project1
 {
-    background-image: url("images/projects/Project1.png");
-    background-size: cover;
+    background-image: url(images/projects/Project1.png);
 }
 
-.Project_Content
-{
-    position: absolute;
-    width: 90%;
-    margin-left: 1rem;
-}
-
-.Project_Skill_Container
-{
-    width: 100%;
-}
-
-.Project_Skill_Icon
-{
-    width: 5%;
-    margin: 0.2rem;
-}
-
-.Project_Card_Heading
-{
-    font-size: 3rem;
-    font-weight: 500;
-    color: white;
-    padding: 1rem 0.5rem;
-}
-
-.Project_Card_Sub_Heading
-{
-    margin: 1rem;
-    width: 70%;
-    font-style: italic;
-    color: white;
-}
-
-.Button_Project
-{
-    margin-left: 1rem;
-}

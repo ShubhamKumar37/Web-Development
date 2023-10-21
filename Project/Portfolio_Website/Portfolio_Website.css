@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:Arial, Helvetica, sans-serif  ;
+    font-family: Helvetica;
     
 }
 
@@ -288,12 +288,25 @@
 
 .Project_Card
 {
-    width: 50%;
+    position: relative;
+    display: flex;
+    width: 60%;
+    height: 30rem;
+    margin: 3rem;
+    align-items: center;
+}
+
+#Project1
+{
+    background-image: url("images/projects/Project1.png");
+    background-size: cover;
 }
 
 .Project_Content
 {
-    width: 50%;
+    position: absolute;
+    width: 90%;
+    margin-left: 1rem;
 }
 
 .Project_Skill_Container
@@ -303,5 +316,27 @@
 
 .Project_Skill_Icon
 {
-    width: 15%;
+    width: 5%;
+    margin: 0.2rem;
+}
+
+.Project_Card_Heading
+{
+    font-size: 3rem;
+    font-weight: 500;
+    color: white;
+    padding: 1rem 0.5rem;
+}
+
+.Project_Card_Sub_Heading
+{
+    margin: 1rem;
+    width: 70%;
+    font-style: italic;
+    color: white;
+}
+
+.Button_Project
+{
+    margin-left: 1rem;
 }

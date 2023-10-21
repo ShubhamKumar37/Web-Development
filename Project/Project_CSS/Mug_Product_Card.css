@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&family=Roboto+Mono:wght@500&display=swap');
+
 *
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Fuggles", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-@import url('https://fonts.googleapis.com/css2?family=Fuggles&family=Roboto+Mono:wght@500&display=swap');
 body
 {
     background-color: antiquewhite;  
@@ -52,18 +54,11 @@ h2
     font-size: 100%;
     width: 80%;
     letter-spacing: 10px;
-    font-family: "Fuggles", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: rgb(109, 109, 109);  
-}
-h1
-{
-    font-family: "Fuggles", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    width: 250px;
 }
 
 .Desc
 {
-    font-family: "Fuggles", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 15px;
     margin: 5px 0;
 }
@@ -73,7 +68,6 @@ h1
     color: green;
     font-size: 25px;
     font-weight: bolder;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 #Price s
 {
@@ -92,6 +86,8 @@ h1
     justify-content: center;
     gap: 10px;
     border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 #Add_To_Cart:hover
@@ -99,5 +95,4 @@ h1
     background-color: green;
     filter: saturate(100%);
     transition: 0.2s ease-in-out;
-
 }

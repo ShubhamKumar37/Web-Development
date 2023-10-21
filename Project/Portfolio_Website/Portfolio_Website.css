@@ -209,14 +209,15 @@
 
 .Zig_Zag_Img
 {
+    right: 0;
     animation: Up_Down_Right_Left 1.5s alternate infinite;
 }
 
 .Plus_Img
 {
     margin-top: -2rem;
-    top: 0;
-    left: 50%;
+    left: 0;
+    top: 50%;
     animation: Up_Down_Right_Left 1.5s alternate infinite;
 }
 
@@ -252,8 +253,7 @@
 
 .Cube_Img
 {
-    right: 0;
-    animation: Rotate_Up_Down 2s alternate infinite;
+    animation: Rotate_Up_Down 2s ease-in-out alternate infinite;
 }
 
 @keyframes Rotate_Up_Down

@@ -125,7 +125,7 @@
     position: relative;
     background-color: rgb(253, 93, 93);
     width: fit-content;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding: 1rem 3rem;
     box-shadow: 5px 5px 9px black;
     cursor: pointer;
@@ -295,11 +295,12 @@
 
 .Project_Card
 {
-    width: 90%;
-    height: 560px;
     position: relative;
+    width: 78%;
+    height: 520px;
     background-size: cover;
     box-shadow: 0 0 40px black;
+    
 }
 
 .Project_Card::after
@@ -324,10 +325,10 @@
     right: 0;
     z-index: 1;
 
-    background: linear-gradient(45deg, rgba(61, 79, 140, 0.952), rgba(52, 68, 120, 0.242), rgba(41, 54, 93, 0.105));
+    background: linear-gradient(45deg, rgba(72, 88, 143, 0.952), rgba(52, 68, 120, 0.242), rgba(41, 54, 93, 0.105));
     transform: scaleX(0);
     transform-origin: left;
-    transition: 0.5s ;
+    transition: all 0.2s ;
 }
 
 .Project_Card:hover::before
@@ -337,6 +338,94 @@
 
 #Project1
 {
+    left: 5%;
     background-image: url(images/projects/Project1.png);
+
 }
 
+.Project_Number
+{
+    position: absolute;
+    font-size: 10rem;
+    color: white;
+    text-shadow: 0 0 1rem;
+    z-index: 5;
+    opacity: 0;
+}
+
+.Project_Number_Left
+{
+    left: -4rem;
+    top: -2rem;
+}
+.Project_Number_Right
+{
+    right: -5rem;
+    top: -2rem; 
+}
+.Project_Card:hover .Project_Number
+{
+    opacity: 1;
+}
+
+.Project_Content_Left
+{
+    left: 10%;
+}
+.Project_Content_Right
+{
+    right: 10%;
+}
+
+.Project_Content
+{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    z-index: 2;
+    color: white;
+    bottom: 15%;
+    width: 70%;
+    transition: 0.2s;
+    /* gap: 2rem; */
+}
+
+.Project_Skill_Container
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+    gap: 0.3rem;
+    margin: 1rem 0;
+}
+
+.Project_Skill_Icon
+{
+    width: 12%;
+}
+
+.Project_Card_Heading
+{
+    font-size: 3.4rem;
+    margin: 1rem 0;
+    font-weight: 400;
+}
+
+.Project_Card_Sub_Heading
+{
+    font-style: italic;
+    width: 55%;
+}
+
+.Project_Button
+{
+    display: flex;
+    margin: 1rem 1rem 1rem 0;
+    gap: 1rem;
+    align-items: center ;
+}
+
+.Project_Card:hover .Project_Content
+{
+    transform: scale(1.1);
+}

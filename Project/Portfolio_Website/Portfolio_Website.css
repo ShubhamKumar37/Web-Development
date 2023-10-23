@@ -6,7 +6,7 @@
     box-sizing: border-box;
     font-family: Helvetica;
     scroll-behavior: smooth;
-    
+    /* background-color: rgb(119, 119, 119); */
 }
 
 #Wrapper
@@ -378,7 +378,7 @@
     z-index: 2;
     color: white;
     bottom: 15%;
-    width: 70%;
+    /* width: 70%; */
     transition: 0.2s;
 }
 .Project_Content_Right
@@ -391,15 +391,16 @@
 {
     display: flex;
     flex-wrap: wrap;
-    width: 45%;
+    width: 80%;
     gap: 0.3rem;
     margin: 1rem 0;
 }
 
 .Project_Skill_Icon
 {
-    width: 12%;
+    width: 2.5rem;
     filter: contrast(120%) saturate(120%) brightness(150%);
+    object-fit: contain;
 }
 
 .Project_Card_Heading
@@ -528,7 +529,7 @@
     margin: 1rem;
     z-index: 1;
     cursor: pointer;
-    transition: 0.4s ease;
+    transition: 0.2s ease;
 }
 
 .Skill_Section_Icons:hover
@@ -536,4 +537,70 @@
     transform: scale(1.3);
 }
 
+.Contact_Us
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    background-color: #E2E2E2;
+    margin-top: 4.9rem;
+    align-items: center;
+}
 
+.Form_Heading
+{
+    display: flex;
+    position: relative;
+    margin: 3rem auto;
+    flex-direction: column;
+
+}
+
+.Contact_Heading
+{
+    position: relative;
+    width: fit-content;
+    color: red;
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+
+.Contact_Sub_Heading
+{
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: rgb(124, 124, 124);
+}
+
+.Form_Section
+{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    left: 12%;
+    gap: 2rem;
+    margin-bottom: 10rem;
+}
+
+.Main_Form
+{
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+}
+
+.Form_Field
+{
+    border: none;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 0 10px black;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.Contact_Button:hover
+{
+    transform: scale(0.9);
+    transition: all 0.3s;
+}

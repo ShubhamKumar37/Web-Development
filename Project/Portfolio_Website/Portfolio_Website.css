@@ -60,7 +60,7 @@
 
 }
 
-.Bookmarks div:hover
+.Bookmarks a:hover
 {
     transition: 0.8s ease;
     font-weight: 600;
@@ -124,11 +124,12 @@
 .HM_Button
 {
     position: relative;
+    border: none;
     background-color: rgb(253, 93, 93);
     width: fit-content;
     font-size: 1.3rem;
     padding: 1rem 3rem;
-    box-shadow: 5px 5px 9px black;
+    box-shadow: 5px 5px 9px rgb(110, 110, 110);
     cursor: pointer;
     z-index: 1;
     color: white;
@@ -603,4 +604,64 @@
 {
     transform: scale(0.9);
     transition: all 0.3s;
+}
+
+.Footer_Section
+{
+    display: flex;
+    position: relative;
+    background-color: #232746;
+    color: white;
+    padding: 7rem;
+    justify-content: space-between;
+}
+
+.Bookmarks_Footer
+{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    padding-left: 8rem;
+    font-size: 1.2rem;
+}
+.Bookmarks_Footer a
+{
+    color: white;
+    text-shadow: 0 0 6px;
+    text-decoration: none;
+}
+
+.Bookmarks_Footer a:hover
+{
+    transition: all 0.3s;
+    color: red;
+}
+
+.Faded_Text_Footer
+{
+    position: absolute;
+    font-size: 5rem;
+    left: 0;
+    bottom: 0;
+    color: #6974c8;
+    user-select: none;
+}
+
+.Redirect_Icon
+{
+    display: flex;
+    gap: 1.5rem;
+    padding-right: 3rem;
+}
+
+.Footer_Icons
+{
+    cursor: pointer;
+
+}
+
+.Footer_Icons:hover 
+{
+    scale: 1.5;
+    transition: all 0.3s ease;
 }

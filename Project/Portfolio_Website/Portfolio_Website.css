@@ -18,7 +18,7 @@
 
 .Container
 {
-    width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
 }
 
@@ -76,7 +76,7 @@
 
     gap: 5rem;
     margin: 4rem auto;
-    padding: 0 1rem;
+    padding: 0 5rem;
     padding-bottom: 8rem;
 }
 
@@ -138,7 +138,7 @@
 {
     position: absolute;
     content: "";
-    background-color: rgba(98, 95, 255, 0.884);
+    background-color: rgba(217, 27, 255, 0.884);
     top: 0;
     bottom: 0;
     left: 0;
@@ -272,6 +272,7 @@
 .Project_Section
 {
     background-color: #E2E2E2;
+    padding: 0 5rem;
 }
 
 .Project_Heading
@@ -368,10 +369,6 @@
 {
     left: 10%;
 }
-.Project_Content_Right
-{
-    left: 50%;
-}
 
 .Project_Content
 {
@@ -383,7 +380,11 @@
     bottom: 15%;
     width: 70%;
     transition: 0.2s;
-    /* gap: 2rem; */
+}
+.Project_Content_Right
+{
+    left: 50%;
+    width: 50%;
 }
 
 .Project_Skill_Container
@@ -398,6 +399,7 @@
 .Project_Skill_Icon
 {
     width: 12%;
+    filter: contrast(120%) saturate(120%) brightness(150%);
 }
 
 .Project_Card_Heading
@@ -425,7 +427,7 @@
 {
     transform: scale(1.1);
 }
-
+    
 #Project1
 {
     background-image: url(images/projects/Project1.png);
@@ -446,3 +448,92 @@
     background-image: url(images/projects/Project4.png);
     left: 17%;
 }
+
+.Skill_Faded_Text
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 7em;
+    color: rgba(176, 176, 176, 0.361);
+    user-select: none;
+    bottom: -25%;
+    right: -2%;
+}
+.Skill_Section
+{
+    position: relative;
+    display: flex;
+    margin: 15rem 3rem 2rem 3rem ;
+    gap: 5rem;
+}
+
+.Skill_Heading
+{
+    font-size: 3rem;
+    color: red;
+    font-weight: 400;
+}
+
+#Caps
+{
+    font-size: 5rem;
+}
+
+
+.Skill_Section_Left
+{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 50%;
+    padding: 2rem;
+}
+
+
+.Skill_Section_Right
+{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+}
+
+.Floating_Icon
+{
+    position: absolute;
+    z-index: -1;
+    transform: translate(-2rem, -3rem);
+    width: 50%;
+    animation: Blob_Up_Down 2s alternate infinite ease-in-out;
+}
+
+@keyframes Blob_Up_Down 
+{
+    from
+    {
+        transform: translate(-2rem, -3rem);
+    }
+    to{
+        transform: translate(3rem, 3rem);
+    }
+}
+
+.Skill_Section_Icons
+{
+    width: 4rem;
+    margin: 1rem;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.Skill_Section_Icons:hover
+{
+    transform: scale(1.3);
+}
+
+

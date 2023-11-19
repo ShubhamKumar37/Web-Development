@@ -1,0 +1,124 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#Wrapper
+{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.Section
+{
+    position: relative;
+    width: 60rem;
+    display: block;
+    margin: 5rem auto;
+    background-color: rgb(196, 201, 205);
+    /* height: 20px; */
+}
+
+.Main_Section
+{
+    margin-left: 60%;
+}
+
+.About_Section
+{
+    position: relative;
+    display: block;
+
+}
+
+.Title
+{
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+
+.Title_Main
+{
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    font-weight: bolder;
+}
+
+#Price
+{
+    font-size: 1.8rem;
+    font-weight: bolder;
+}
+
+#Price_Strike
+{
+    margin-left: 18px;
+    text-decoration: line-through;
+    font-size: 20px;
+    text-align: center;
+}
+
+[type="radio"]:checked, [type="radio"]:not(:checked)
+{
+    position: absolute;
+    visibility: hidden;
+}
+
+.Desc_Wrap
+{
+    position: relative;
+    display: block;
+}
+
+.Desc_Wrap label
+{
+    font-size: 20px;
+    margin-right: 2rem;
+    font-weight: bolder;
+    text-shadow: 0 0 1px rgb(255, 255, 255);
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+
+.Desc_Button:checked + label
+{
+    opacity: 1;
+}
+.Desc_Button:not(:checked) + label
+{
+    opacity: 0.5;
+}
+.Desc_Button:hover + label
+{
+    opacity: 0.8;
+}
+
+.Description_Section
+{
+    transform: translateY(20px);
+    transition: all 0.2s linear;
+    opacity: 0;
+}
+
+#Desc:checked ~ .Description1
+{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+#Detail:checked ~ .Description2
+{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.Desc_Wrap.Description2
+{
+    position: absolute;
+}
+

@@ -3,122 +3,372 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white;
 }
 
 #Wrapper
 {
     position: relative;
-    height: 100vh;
+    width: 100%;
+    display: block;
     overflow: hidden;
 }
 
 .Section
 {
     position: relative;
-    width: 60rem;
-    display: block;
-    margin: 5rem auto;
-    background-color: rgb(196, 201, 205);
-    /* height: 20px; */
+    display: flex;
+    width: 60%;
+    margin: 2rem auto;
+    flex-wrap: wrap;
 }
 
-.Main_Section
+.About_Wrap
 {
-    margin-left: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 33rem;
+    text-align: left;
 }
 
-.About_Section
+.About_Title
 {
-    position: relative;
-    display: block;
-
-}
-
-.Title
-{
-    font-size: 1.1rem;
+    font-size: 15px;
+    font-weight: bold;
     letter-spacing: 2px;
-    font-weight: bolder;
 }
-
-.Title_Main
+.About_Wrap h2
 {
-    font-size: 2.5rem;
+    font-size: 30px;
+    font-weight: bold;
     letter-spacing: 3px;
-    font-weight: bolder;
 }
 
-#Price
+.About_Wrap h4
 {
-    font-size: 1.8rem;
-    font-weight: bolder;
+    font-size: 24px;
+    margin-bottom: 1.5rem;
 }
-
-#Price_Strike
+.About_Wrap h4 span
 {
-    margin-left: 18px;
+    font-size: 14px;
     text-decoration: line-through;
-    font-size: 20px;
-    text-align: center;
 }
 
 [type="radio"]:checked, [type="radio"]:not(:checked)
 {
-    position: absolute;
     visibility: hidden;
+    position: absolute
 }
 
 .Desc_Wrap
 {
-    position: relative;
     display: block;
+    position: relative;
 }
-
-.Desc_Wrap label
-{
-    font-size: 20px;
-    margin-right: 2rem;
-    font-weight: bolder;
-    text-shadow: 0 0 1px rgb(255, 255, 255);
+.Desc_Wrap_Button:checked + label, .Desc_Wrap_Button:not(:checked) + label
+{  
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
     transition: all 0.2s linear;
+    opacity: 0.5;
     cursor: pointer;
+    margin-right: 2rem;
 }
 
-
-.Desc_Button:checked + label
+.Desc_Wrap_Button:checked + label
 {
     opacity: 1;
 }
-.Desc_Button:not(:checked) + label
-{
-    opacity: 0.5;
-}
-.Desc_Button:hover + label
+.Desc_Wrap_Button + label:hover
 {
     opacity: 0.8;
 }
 
-.Description_Section
+.Desc_Detail_Wrap
 {
+    width: 80%;
+    display: flex;
+    font-size: 1rem;
+    justify-content: space-between;
+    transition: all 0.2s ease-in;
     transform: translateY(20px);
-    transition: all 0.2s linear;
     opacity: 0;
 }
 
-#Desc:checked ~ .Description1
+#For_Desc:checked ~ .Desc_Detail_Wrap.Desc1
 {
-    opacity: 1;
     transform: translateY(0px);
+    opacity: 1;
 }
 
-#Detail:checked ~ .Description2
+.Desc_Detail_Wrap.Desc1
 {
-    opacity: 1;
-    transform: translateY(0px);
+    margin: 1rem 0;
 }
-
-.Desc_Wrap.Description2
+.Desc_Detail_Wrap.Desc2
 {
     position: absolute;
+    z-index: 1;
+    top: 2.3rem;
 }
 
+#For_Detail:checked ~ .Desc_Detail_Wrap.Desc2
+{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.Dimension span
+{
+    font-size: 2rem;
+}
+
+.Color_Button:checked + label, .Color_Button:not(:checked) + label
+{
+    position: relative;
+    height: 34px;
+    width: 34px;
+    border-radius: 5px;
+    margin-right: 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background-image: url("modern chair/images/color1.jpg");
+    box-shadow: 0 12px 35px 0 rgba(16, 39, 112, 0.25);
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+}
+
+.Color_Button:checked + label
+{
+    border: 2px solid  rgb(0, 0, 0);
+    transform: scale(1.1);
+}
+
+label.For_Clr1
+{
+    margin-left: 33rem;
+}
+.Color_Button.Clr2 + label
+{
+    background-image: url("modern chair/images/color2.jpg");
+}
+.Color_Button.Clr3 + label
+{
+    background-image: url("modern chair/images/color3.jpg");
+}
+.Color_Button.Clr4 + label
+{
+    background-image: url("modern chair/images/color4.jpg");
+}
+.Color_Button.Clr5 + label
+{
+    background-image: url("modern chair/images/color5.jpg");
+}
+.Color_Button.Clr6 + label
+{
+    background-image: url("modern chair/images/color6.jpg");
+}
+
+.Abs_Image
+{
+    position: absolute;
+    display: inline-block;
+    height: 33rem;
+    width: 33rem;
+    background-image: url("modern chair/images/chair5.png");
+    background-position: center top;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    transition: all 0.7s ease;
+    z-index: 3;
+    opacity: 0;
+}
+
+.Clr1:checked ~ .Abs_Image.Chair1
+{
+    background-image: url("modern chair/images/chair1.png");
+    opacity: 1;
+    animation: shake 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.Clr2:checked ~ .Abs_Image.Chair2
+{
+    background-image: url("modern chair/images/chair2.png");
+    opacity: 1;
+    animation: shake 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.Clr3:checked ~ .Abs_Image.Chair3
+{
+    background-image: url("modern chair/images/chair3.png");
+    opacity: 1;
+    animation: shake 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.Clr4:checked ~ .Abs_Image.Chair4
+{
+    background-image: url("modern chair/images/chair4.png");
+    opacity: 1;
+    animation: shake 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.Clr5:checked ~ .Abs_Image.Chair5
+{
+    background-image: url("modern chair/images/chair5.png");
+    opacity: 1;
+    animation: shake 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.Clr6:checked ~ .Abs_Image.Chair6
+{
+    background-image: url("modern chair/images/chair6.png");
+    opacity: 1;
+    animation: shake 0.7s linear;
+}
+
+@keyframes shake 
+{
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0) rotate(-1deg);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0) rotate(2deg);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0) rotate(3deg);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0) rotate(0deg);
+    }
+}
+
+.Back_Color
+{
+    position: fixed;
+    display: block;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 0.72s linear;
+}
+
+.Back_Color.Chair1
+{
+    background-image: linear-gradient(196deg, #f1a9a9, #e66767);
+    opacity: 0;
+}
+.Clr1:checked ~ .Back_Color.Chair1
+{
+    opacity: 1;
+}
+
+.Back_Color.Chair2
+{
+    background-image: linear-gradient(196deg, #4c4c4c, #262626);
+    opacity: 0;
+}
+.Clr2:checked ~ .Back_Color.Chair2
+{
+    opacity: 1;
+}
+.Back_Color.Chair3
+{
+    background-image: linear-gradient(196deg, #8a9fb2, #5f7991);
+    opacity: 0;
+}
+.Clr3:checked ~ .Back_Color.Chair3
+{
+    opacity: 1;
+}
+.Back_Color.Chair4
+{
+    background-image: linear-gradient(196deg, #97afc3, #6789a7);
+    opacity: 0;
+}
+.Clr4:checked ~ .Back_Color.Chair4
+{
+    opacity: 1;
+}
+.Back_Color.Chair5
+{
+    background-image: linear-gradient(196deg, #afa6a0, #8c7f76);
+    opacity: 0;
+}
+.Clr5:checked ~ .Back_Color.Chair5
+{
+    opacity: 1;
+}
+.Back_Color.Chair6
+{
+    background-image: linear-gradient(196deg, #aaadac, #838786);
+    opacity: 0;
+}
+.Clr6:checked ~ .Back_Color.Chair6
+{
+    opacity: 1;
+}
+
+.Buy_Button
+{
+    display: flex;
+    margin-left: 35rem;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    width: 10rem;
+    background: #ab5555;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.Buy_Button:hover
+{
+    background: #c26060;
+}
+
+.Clr2:checked ~ .Buy_Button
+{
+    background: #2b2b2b;
+}
+.Clr2:checked ~ .Buy_Button:hover
+{
+    background: #5d5b5b;
+}
+.Clr3:checked ~ .Buy_Button
+{
+    background: #4c6174;
+}
+.Clr3:checked ~ .Buy_Button:hover
+{
+    background: #7899b8;
+}
+.Clr4:checked ~ .Buy_Button
+{
+    background: #33414e;
+}
+.Clr4:checked ~ .Buy_Button:hover
+{
+    background: #546a80;
+}
+.Clr5:checked ~ .Buy_Button
+{
+    background: #5a524c;
+}
+.Clr5:checked ~ .Buy_Button:hover
+{
+    background: #7b7067;
+}
+.Clr6:checked ~ .Buy_Button
+{
+    background: #4d5552;
+}
+.Clr6:checked ~ .Buy_Button:hover
+{
+    background: #696d6c;
+}

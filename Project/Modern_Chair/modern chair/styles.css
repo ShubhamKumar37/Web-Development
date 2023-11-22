@@ -147,11 +147,6 @@ h5 {
   transform: translateY(20px);
 }
  
-#desc-1:checked ~ .desc-sec.accor-1 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
 
 .desc-sec.accor-2 {
   position: absolute;
@@ -159,6 +154,11 @@ h5 {
   left: 0;
   width: 100%;
   z-index: 2;
+}
+#desc-1:checked ~ .desc-sec.accor-1 {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
 }
 
 #desc-2:checked ~ .desc-sec.accor-2 {

@@ -11,16 +11,18 @@
     position: relative;
     width: 100%;
     display: block;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .Section
 {
     position: relative;
     display: flex;
-    width: 60%;
-    margin: 2rem auto;
+    /* max-width: calc(100% - 40px);
+    width: 60%; */
+    justify-content: center;
     flex-wrap: wrap;
+    top: 10rem;
 }
 
 .About_Wrap
@@ -137,9 +139,14 @@
     transition: all 0.2s ease;
     background-image: url("modern chair/images/color1.jpg");
     box-shadow: 0 12px 35px 0 rgba(16, 39, 112, 0.25);
-    overflow: hidden;
+    /* overflow: hidden; */
     background-position: center;
     background-size: cover;
+}
+
+.About_Wrap h3
+{
+    margin-bottom: 1rem;
 }
 
 .Color_Button:checked + label
@@ -150,7 +157,10 @@
 
 label.For_Clr1
 {
-    margin-left: 33rem;
+    margin-left: 39%;
+}
+.Color_Button.Clr6 + label {
+    margin-right: 37%;
 }
 .Color_Button.Clr2 + label
 {
@@ -179,12 +189,13 @@ label.For_Clr1
     display: inline-block;
     height: 33rem;
     width: 33rem;
+    left: 0;
     background-image: url("modern chair/images/chair5.png");
     background-position: center top;
     background-size: 80%;
     background-repeat: no-repeat;
     transition: all 0.7s ease;
-    z-index: 3;
+    z-index: 1;
     opacity: 0;
 }
 
@@ -315,7 +326,7 @@ label.For_Clr1
 .Buy_Button
 {
     display: flex;
-    margin-left: 35rem;
+    /* margin-left: 23rem; */
     margin-top: 2rem;
     justify-content: center;
     align-items: center;
@@ -371,4 +382,11 @@ label.For_Clr1
 .Clr6:checked ~ .Buy_Button:hover
 {
     background: #696d6c;
+}
+
+@media screen and (max-width: 50rem){
+    #Wrapper
+    {
+        background-color: black;
+    }
 }

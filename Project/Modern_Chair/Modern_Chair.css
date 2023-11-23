@@ -383,10 +383,3 @@ label.For_Clr1
 {
     background: #696d6c;
 }
-
-@media screen and (max-width: 50rem){
-    #Wrapper
-    {
-        background-color: black;
-    }
-}
